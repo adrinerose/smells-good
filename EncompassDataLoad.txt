@@ -1,0 +1,520 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16" pages="6">
+  <diagram name="Database Objects" id="nGYjIhSKYKREB8npz3al">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-1" value="&lt;span style=&quot;font-family: Helvetica; font-size: 24px; font-weight: 700;&quot;&gt;Database Objects&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="23" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-2" value="DataLoadInstance" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="80" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8zEkbqbzZlLIxr7pjPDR-4" target="8zEkbqbzZlLIxr7pjPDR-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-4" value="FieldDictionary" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="80" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-5" value="DataLoadFields_[Dataset]" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="80" y="310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-6" value="Table that stores metadata of a load process. This is also used for monitoring" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="360" y="120" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-7" value="Table that contains loan fields that needs to be retrieved" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="360" y="230" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-8" value="Table that stores the loan data fields retrieved from Encompass. This acts as a staging table" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="360" y="350" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8zEkbqbzZlLIxr7pjPDR-2" target="8zEkbqbzZlLIxr7pjPDR-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8zEkbqbzZlLIxr7pjPDR-5" target="8zEkbqbzZlLIxr7pjPDR-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-11" value="PostLoad" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="650" y="270" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-12" value="PreLoad" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="650" y="130" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-13" value="Procedure called before retrieving the data from Encompass API" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="920" y="130" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Procedure called after all the loan data is retrieved from Encompass API&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;and loaded to the&amp;nbsp;&lt;b style=&quot;&quot;&gt;DataLoadFields_[Dataset]&lt;/b&gt;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;table&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="920" y="270" width="251" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8zEkbqbzZlLIxr7pjPDR-12" target="8zEkbqbzZlLIxr7pjPDR-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8zEkbqbzZlLIxr7pjPDR-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="8zEkbqbzZlLIxr7pjPDR-11" target="8zEkbqbzZlLIxr7pjPDR-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PkkG0JZCGx45_UriOR7V-4" value="PopulateDatasetTable" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="631" y="425" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PkkG0JZCGx45_UriOR7V-5" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Procedure that populates the&amp;nbsp;&lt;b&gt;EncompassFields_[Dataset]&lt;/b&gt;&amp;nbsp;table using&amp;nbsp;&lt;b&gt;DataLoadFields_[Dataset]&lt;/b&gt;&amp;nbsp;table as source. This is a &lt;b&gt;scratch and load&lt;/b&gt; process&lt;/font&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="920" y="425" width="251" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PkkG0JZCGx45_UriOR7V-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="PkkG0JZCGx45_UriOR7V-4" target="PkkG0JZCGx45_UriOR7V-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fiZcrf6cMAQROC5oUICB-1" value="EncompassFields_[Dataset]" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="80" y="473" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fiZcrf6cMAQROC5oUICB-2" value="Pivot Table of data from the&amp;nbsp;&lt;div&gt;&lt;b&gt;DataLoadFields_[Dataset]&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;table&amp;nbsp;&lt;/div&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="360" y="473" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fiZcrf6cMAQROC5oUICB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="fiZcrf6cMAQROC5oUICB-1" target="fiZcrf6cMAQROC5oUICB-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fiZcrf6cMAQROC5oUICB-6" value="MergeDataLoadTableToDatasetTable" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="641" y="560" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fiZcrf6cMAQROC5oUICB-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Procedure that populates the&amp;nbsp;&lt;b&gt;EncompassFields_[Dataset]&lt;/b&gt;&amp;nbsp;table using&amp;nbsp;&lt;b&gt;DataLoadFields_[Dataset]&lt;/b&gt;&amp;nbsp;table as source.&amp;nbsp;&lt;/font&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="930" y="560" width="251" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fiZcrf6cMAQROC5oUICB-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="fiZcrf6cMAQROC5oUICB-6" target="fiZcrf6cMAQROC5oUICB-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rv-YlECnnlM4OvySN7W_-5" value="CreateDataLoanFieldsViewForAllDatasets" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="641" y="690" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rv-YlECnnlM4OvySN7W_-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Procedure that creates/re-created the&amp;nbsp;&lt;b&gt;v_DataLoanFields&lt;/b&gt; view&amp;nbsp;&lt;/font&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="690" width="251" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rv-YlECnnlM4OvySN7W_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="rv-YlECnnlM4OvySN7W_-5" target="rv-YlECnnlM4OvySN7W_-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rv-YlECnnlM4OvySN7W_-11" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;v_DataLoanFields&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="610" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rv-YlECnnlM4OvySN7W_-12" value="View that combines all the fields of all datasets to a single query" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="610" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rv-YlECnnlM4OvySN7W_-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="rv-YlECnnlM4OvySN7W_-11" target="rv-YlECnnlM4OvySN7W_-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="AFN.Encompass.DataLoad.Core Classes" id="AoCyFGL-NoywggVhB1bs">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-28" value="AFN.Encompass.DataLoad.Core Classes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=24;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JeabwYxdI8AZKKULIYSZ-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="90" width="930" height="555" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-1" value="DataLoadStarter" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="110" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-2" value="DataExtractorService" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry y="160" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-3" value="DataWarehouseService" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="540" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-4" target="6LJeaQNXGtvteGVrsbr_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-4" value="DataLoaderService" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry y="285" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-5" value="WriteQueueService" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="540" y="350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-9" target="6LJeaQNXGtvteGVrsbr_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-9" value="EncompassApiService" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="540" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-11" value="A helper service that calls the Encompass API Pipeline" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="760" y="120" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-13" value="A helper service that handles queueing.&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="760" y="350" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-14" value="A service that uses the &lt;b&gt;EncompassApiService &lt;/b&gt;to retrieve loan data from the pipeline in batches" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=center;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="240" y="160" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-2" target="6LJeaQNXGtvteGVrsbr_-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-16" value="Starts the &lt;b&gt;DataExtractorService &lt;/b&gt;and the &lt;b&gt;DataLoaderService&lt;/b&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="450" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-1" target="6LJeaQNXGtvteGVrsbr_-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-19" value="Retrieves loan data from the &lt;b&gt;WriteQueueService&lt;/b&gt;.&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;For Full Load&lt;/b&gt;: Writes the loan data to a json file for SqlBulkCopy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;For Partial Load&lt;/b&gt;: Upserts the loan data to the&amp;nbsp;ec_nextgen.DataLoadFields table&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=center;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="240" y="285" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-21" value="A helper service that reads and writes data to the database" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="760" y="235" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-3" target="6LJeaQNXGtvteGVrsbr_-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-5" target="6LJeaQNXGtvteGVrsbr_-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-25" value="DataLoadInstance" style="rounded=1;whiteSpace=wrap;html=1;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="540" y="465" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-26" value="&lt;div&gt;An object that stores the current data load process metadata.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="JeabwYxdI8AZKKULIYSZ-2">
+          <mxGeometry x="760" y="465" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6LJeaQNXGtvteGVrsbr_-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="JeabwYxdI8AZKKULIYSZ-2" source="6LJeaQNXGtvteGVrsbr_-25" target="6LJeaQNXGtvteGVrsbr_-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PAABV9sftiP-yfekikb6" name="Process Flow Overview">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vR1VXAQILmSxok6PK0bY-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;C#&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="630" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="vR1VXAQILmSxok6PK0bY-2" target="vR1VXAQILmSxok6PK0bY-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="vR1VXAQILmSxok6PK0bY-3" target="vR1VXAQILmSxok6PK0bY-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-3" value="Invoke &lt;b style=&quot;font-size: 14px;&quot;&gt;PostLoad&lt;/b&gt; Stored Procedure" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="790" y="208" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-4" value="Retrieve Loan Data from Encompass API" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="550" y="205" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="vR1VXAQILmSxok6PK0bY-5" target="vR1VXAQILmSxok6PK0bY-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-5" value="Invoke &lt;b style=&quot;font-size: 14px;&quot;&gt;PreLoad&lt;/b&gt; Stored Procedure" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="310" y="205" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-6" value="End" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="204" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.013;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="1" source="vR1VXAQILmSxok6PK0bY-4" target="vR1VXAQILmSxok6PK0bY-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vR1VXAQILmSxok6PK0bY-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;Task Scheduler&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100" width="260" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="6nO-kCUrWt5aABFKaHfz-1" value="Process Flow Overview" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="270" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Start Process" id="grCgw55qtiu1nELnreQ-">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ni1SQBsDh2BNyqBAu7Qr-2" value="Start Process" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="20" y="10" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="g-FmphAGuV2eR4dzWT3Z-6" value="Parallel" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;verticalAlign=middle;container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="50" y="170" width="470" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QgxEKAugBWQkUO_mErIr-1" value="DataLoadStarter" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="90" y="90" width="110" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="QgxEKAugBWQkUO_mErIr-2" value="DataWarehouseService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="580" y="90" width="140" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="d76Oj4VeinXFFS4GG2Ks-1" value="DataExtractorService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="240" y="90" width="130" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="d76Oj4VeinXFFS4GG2Ks-2" value="DataLoaderService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="410" y="90" width="120" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="hR1dYMijHrdoFgxxHhDQ-1" target="hR1dYMijHrdoFgxxHhDQ-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-10" value="Start" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;sketch=1;curveFitting=1;jiggle=2;" parent="hR1dYMijHrdoFgxxHhDQ-9" vertex="1" connectable="0">
+          <mxGeometry x="0.1625" y="-1" relative="1" as="geometry">
+            <mxPoint x="-13" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;dashed=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="395" as="sourcePoint" />
+            <mxPoint x="150" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-12" value="Done" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;sketch=1;curveFitting=1;jiggle=2;" parent="hR1dYMijHrdoFgxxHhDQ-11" vertex="1" connectable="0">
+          <mxGeometry x="0.1781" y="5" relative="1" as="geometry">
+            <mxPoint x="7" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" target="hR1dYMijHrdoFgxxHhDQ-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="226" as="sourcePoint" />
+            <mxPoint x="390" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-16" value="Start" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;sketch=1;curveFitting=1;jiggle=2;" parent="hR1dYMijHrdoFgxxHhDQ-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.607" y="-1" relative="1" as="geometry">
+            <mxPoint x="163" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;dashed=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="hR1dYMijHrdoFgxxHhDQ-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="435" />
+              <mxPoint x="280" y="441" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-18" value="Done" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;sketch=1;curveFitting=1;jiggle=2;" parent="hR1dYMijHrdoFgxxHhDQ-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.4163" relative="1" as="geometry">
+            <mxPoint x="3" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-FmphAGuV2eR4dzWT3Z-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=-0.05;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="481" as="sourcePoint" />
+            <mxPoint x="644.5" y="495" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="500" />
+              <mxPoint x="398" y="500" />
+              <mxPoint x="398" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-FmphAGuV2eR4dzWT3Z-3" value="[Full Load] Start SqlBulkCopy to Dataset_X&lt;div&gt;[Partial Load] Start SqlBulkCopy to Dataset Temp table&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;sketch=1;curveFitting=1;jiggle=2;" parent="g-FmphAGuV2eR4dzWT3Z-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.5554" y="-1" relative="1" as="geometry">
+            <mxPoint x="134" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aqym-WrZv3160E-d2ep3-1" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="770" y="280" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqym-WrZv3160E-d2ep3-2" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="770" y="330" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aqym-WrZv3160E-d2ep3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.496;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="d76Oj4VeinXFFS4GG2Ks-1" target="Aqym-WrZv3160E-d2ep3-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aqym-WrZv3160E-d2ep3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="hR1dYMijHrdoFgxxHhDQ-15" target="Aqym-WrZv3160E-d2ep3-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6R29HXDisLa8CBMG9Dkh-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.05;exitY=0.945;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.1;entryY=0.817;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="hR1dYMijHrdoFgxxHhDQ-1" target="g-FmphAGuV2eR4dzWT3Z-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="510" as="sourcePoint" />
+            <mxPoint x="270" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6R29HXDisLa8CBMG9Dkh-2" value="Invoke SP to&amp;nbsp;&lt;div&gt;recreate view&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;ec_nextgen.CreateDataLoanFieldsView&lt;/b&gt;:&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];container=0;sketch=1;curveFitting=1;jiggle=2;" parent="6R29HXDisLa8CBMG9Dkh-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.1614" y="-1" relative="1" as="geometry">
+            <mxPoint x="-37" y="28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="140" y="185" width="10" height="405" as="geometry" />
+        </mxCell>
+        <mxCell id="g-FmphAGuV2eR4dzWT3Z-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="645" y="470" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="300" y="185" width="10" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="hR1dYMijHrdoFgxxHhDQ-15" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};container=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="465" y="221" width="10" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="wZngp2SShBUpppJy7b6b-1" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;exitX=-0.05;exitY=0.87;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hR1dYMijHrdoFgxxHhDQ-1" target="QgxEKAugBWQkUO_mErIr-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="560" as="sourcePoint" />
+            <mxPoint x="290" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wZngp2SShBUpppJy7b6b-2" value="&lt;font face=&quot;Helvetica&quot;&gt;[Partial Load] Upsert Dataset Temp table to actual Dataset table&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="wZngp2SShBUpppJy7b6b-1">
+          <mxGeometry x="-0.1" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A: DataExtractorService" id="am0JoMRSEKMv-YwBHjA7">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="osDb3VK7MlSmVfAAGK8J-1" value="" style="group;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="100" y="90" width="590" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="fYcplz-M5dFaygL771k5-1" value="DataExtractorService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="osDb3VK7MlSmVfAAGK8J-1">
+          <mxGeometry width="140" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="fYcplz-M5dFaygL771k5-1">
+          <mxGeometry x="65" y="80" width="10" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fYcplz-M5dFaygL771k5-2" value="EncompassApiService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="osDb3VK7MlSmVfAAGK8J-1">
+          <mxGeometry x="260" width="140" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="fYcplz-M5dFaygL771k5-2">
+          <mxGeometry x="65" y="89" width="10" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="0iHgYMk9rk7XeYY5zaXl-1" value="WriteQueueService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="osDb3VK7MlSmVfAAGK8J-1">
+          <mxGeometry x="450" width="140" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="0iHgYMk9rk7XeYY5zaXl-1">
+          <mxGeometry x="65" y="300" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="osDb3VK7MlSmVfAAGK8J-1" source="xqE3VpwTlytFc25WPmQG-1" target="xqE3VpwTlytFc25WPmQG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="97" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-4" value="Initialize and Get the loan count" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="xqE3VpwTlytFc25WPmQG-3">
+          <mxGeometry x="-0.3266" y="-2" relative="1" as="geometry">
+            <mxPoint x="30" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;exitX=0.479;exitY=0.337;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.504;entryY=0.336;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="osDb3VK7MlSmVfAAGK8J-1" source="fYcplz-M5dFaygL771k5-2" target="fYcplz-M5dFaygL771k5-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-6" value="Loan count" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="xqE3VpwTlytFc25WPmQG-5">
+          <mxGeometry x="-0.1532" y="3" relative="1" as="geometry">
+            <mxPoint x="-6" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-8" value="Batch: 1000" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="osDb3VK7MlSmVfAAGK8J-1">
+          <mxGeometry x="-0.8675" y="15" relative="1" as="geometry">
+            <mxPoint x="69" y="185" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="119" y="185" />
+              <mxPoint x="119" y="256" />
+            </Array>
+            <mxPoint x="74" y="256" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=-0.2;entryY=0.585;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="osDb3VK7MlSmVfAAGK8J-1" target="xqE3VpwTlytFc25WPmQG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="202" as="sourcePoint" />
+            <mxPoint x="320" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-10" value="Get loans request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="xqE3VpwTlytFc25WPmQG-9">
+          <mxGeometry x="0.0484" y="-3" relative="1" as="geometry">
+            <mxPoint x="8" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="osDb3VK7MlSmVfAAGK8J-1" target="xqE3VpwTlytFc25WPmQG-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-12" value="Loan data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="xqE3VpwTlytFc25WPmQG-11">
+          <mxGeometry x="-0.055" relative="1" as="geometry">
+            <mxPoint y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.15;entryY=0.156;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="osDb3VK7MlSmVfAAGK8J-1" source="xqE3VpwTlytFc25WPmQG-1" target="xqE3VpwTlytFc25WPmQG-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="310" as="sourcePoint" />
+            <mxPoint x="510" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xqE3VpwTlytFc25WPmQG-18" value="Write loan data to queue" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="xqE3VpwTlytFc25WPmQG-17">
+          <mxGeometry x="-0.4299" y="1" relative="1" as="geometry">
+            <mxPoint x="223" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlepU-AkzPzkTBA-3e6p-1" value="A: DataExtractorService" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="23" width="280" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="B: DataLoaderService" id="yweONS21FpTlGcFdbcGZ">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wvyN_8omC_EL9w0D4Iiu-1" value="DataLoaderService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="120" y="90" width="120" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};sketch=1;curveFitting=1;jiggle=2;" parent="wvyN_8omC_EL9w0D4Iiu-1" vertex="1">
+          <mxGeometry x="55" y="80" width="10" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="wvyN_8omC_EL9w0D4Iiu-2" value="WriteQueueService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="300" y="90" width="120" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};sketch=1;curveFitting=1;jiggle=2;" parent="wvyN_8omC_EL9w0D4Iiu-2" vertex="1">
+          <mxGeometry x="55" y="100" width="10" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-4" value="While loan is retrieved" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;entryX=1;entryY=0.86;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" target="FbHzXYkU2knT3DQoNREs-1" edge="1">
+          <mxGeometry x="-0.8621" y="20" relative="1" as="geometry">
+            <mxPoint x="180" y="190" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="210" y="190" />
+              <mxPoint x="210" y="351" />
+            </Array>
+            <mxPoint x="185" y="280" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-5" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" target="wvyN_8omC_EL9w0D4Iiu-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="210" as="sourcePoint" />
+            <mxPoint x="240" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-6" value="Get loan item" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" parent="FbHzXYkU2knT3DQoNREs-5" vertex="1" connectable="0">
+          <mxGeometry x="0.0585" y="3" relative="1" as="geometry">
+            <mxPoint x="-1" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-7" value="" style="endArrow=none;html=1;rounded=0;startArrow=classic;startFill=1;endFill=0;dashed=1;entryX=0.488;entryY=0.326;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="wvyN_8omC_EL9w0D4Iiu-1" target="wvyN_8omC_EL9w0D4Iiu-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="240" as="sourcePoint" />
+            <mxPoint x="280" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-8" value="Loan data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;curveFitting=1;jiggle=2;" parent="FbHzXYkU2knT3DQoNREs-7" vertex="1" connectable="0">
+          <mxGeometry x="0.0779" y="2" relative="1" as="geometry">
+            <mxPoint x="-5" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FbHzXYkU2knT3DQoNREs-13" value="Append to json file&amp;nbsp;&lt;div&gt;for SqlBulkCopy&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="305" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="230" y="305" />
+              <mxPoint x="230" y="335" />
+            </Array>
+            <mxPoint x="185" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f3Gj7ot7cG_du6O_F8gT-2" value="B: DataLoaderService" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="20" width="260" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
